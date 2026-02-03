@@ -1,0 +1,9 @@
+
+{
+  "name": "Nqobile Magwaza - AI/ML Software Engineer Portfolio",
+  "description": "A high-end, professional portfolio for Nqobile Magwaza, showcasing AI/ML and software engineering expertise, career materials, and project highlights.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
