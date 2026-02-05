@@ -1,5 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
+import profileImg from "../assets/Nqobile_Magwaza.png";
 import { 
   Github, 
   Linkedin, 
@@ -127,7 +128,7 @@ const Hero: React.FC = () => {
         </div>
         <div className="relative hidden md:block">
           <div className="aspect-square rounded-3xl overflow-hidden glass-card p-4 rotate-3 transform transition-transform hover:rotate-0">
-            <img src="./assets/Nqobile Magwaza.png" alt="Profile" className="w-full h-full object-cover rounded-2xl grayscale hover:grayscale-0 transition-all duration-700" />
+            <img src={profileImg} alt="Nqobile" className="w-full h-full object-cover rounded-2xl grayscale hover:grayscale-0 transition-all duration-700" />
           </div>
           <div className="absolute -bottom-6 -right-6 p-6 glass-card rounded-2xl animate-bounce">
             <div className="flex items-center space-x-3">
