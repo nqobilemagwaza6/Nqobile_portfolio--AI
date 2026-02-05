@@ -127,7 +127,7 @@ const Hero: React.FC = () => {
         </div>
         <div className="relative hidden md:block">
           <div className="aspect-square rounded-3xl overflow-hidden glass-card p-4 rotate-3 transform transition-transform hover:rotate-0">
-            <img src="/Nqobile Magwaza.png" alt="Profile" className="w-full h-full object-cover rounded-2xl grayscale hover:grayscale-0 transition-all duration-700" />
+            <img src="./assets/Nqobile Magwaza.png" alt="Profile" className="w-full h-full object-cover rounded-2xl grayscale hover:grayscale-0 transition-all duration-700" />
           </div>
           <div className="absolute -bottom-6 -right-6 p-6 glass-card rounded-2xl animate-bounce">
             <div className="flex items-center space-x-3">
@@ -154,28 +154,24 @@ const About: React.FC = () => (
       <SectionHeading title="Passionate about AI-driven solutions." subtitle="Biography" />
       <div className="grid md:grid-cols-3 gap-12">
         <div className="md:col-span-2 space-y-6">
-          <p className="text-xl text-slate-300 leading-relaxed">
+        <p className="text-xl text-slate-300 leading-relaxed">
             As a 1997-born professional matriculated in 2014, I have spent the last decade building a strong foundation in systems development. My journey began with a Certificate in Network Support and evolved into a deep dive into full-stack development through WeThinkCode.
           </p>
           <p className="text-xl text-slate-300 leading-relaxed">
-            Currently working at AI Campus as a Junior Software Engineer, I am dedicated to bridging the gap between traditional software engineering and the rapidly evolving field of Artificial Intelligence. My unique background in networking and systems development allows me to architect solutions that are not only intelligent but also infrastructure-aware.
+            I am dedicated to bridging the gap between traditional software engineering and the rapidly evolving field of Artificial Intelligence. My unique background in networking and systems development allows me to architect solutions that are not only intelligent but also infrastructure-aware, focusing on building intelligent, scalable AI/ML systems.
           </p>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 pt-8">
             <div className="p-6 rounded-2xl glass-card text-center group hover:border-indigo-500/50 transition-all">
-              <h4 className="text-3xl font-bold text-indigo-400 mb-1">5+</h4>
+              <h4 className="text-3xl font-bold text-indigo-400 mb-1">2+</h4>
               <p className="text-xs uppercase text-slate-500 tracking-wider">Years Exp.</p>
             </div>
             <div className="p-6 rounded-2xl glass-card text-center group hover:border-indigo-500/50 transition-all">
-              <h4 className="text-3xl font-bold text-indigo-400 mb-1">20+</h4>
+              <h4 className="text-3xl font-bold text-indigo-400 mb-1">5+</h4>
               <p className="text-xs uppercase text-slate-500 tracking-wider">Proj. Done</p>
             </div>
             <div className="p-6 rounded-2xl glass-card text-center group hover:border-indigo-500/50 transition-all">
               <h4 className="text-3xl font-bold text-indigo-400 mb-1">10+</h4>
               <p className="text-xs uppercase text-slate-500 tracking-wider">Tech Stack</p>
-            </div>
-            <div className="p-6 rounded-2xl glass-card text-center group hover:border-indigo-500/50 transition-all">
-              <h4 className="text-3xl font-bold text-indigo-400 mb-1">3</h4>
-              <p className="text-xs uppercase text-slate-500 tracking-wider">Internships</p>
             </div>
           </div>
         </div>
@@ -198,7 +194,7 @@ const About: React.FC = () => (
               <span className="text-slate-200">English, Zulu, Xhosa</span>
             </li>
             <li className="flex flex-col pt-4 border-t border-white/5">
-              <a href="#contact" className="text-indigo-400 hover:text-indigo-300 font-medium flex items-center gap-2 transition-colors">
+              <a href={PERSONAL_INFO.resumeUrl} className="text-indigo-400 hover:text-indigo-300 font-medium flex items-center gap-2 transition-colors">
                 Download Resume <Download size={16} />
               </a>
             </li>
@@ -371,6 +367,18 @@ const EducationAndCertificates: React.FC = () => (
                 <h5 className="text-xl font-bold mb-1">Certificate in Network Support</h5>
                 <p className="text-slate-400">MegaTraining</p>
               </div>
+              
+            </div>
+                        <div className="glass-card p-8 rounded-3xl relative overflow-hidden group">
+               <div className="absolute top-0 right-0 p-4 opacity-5 group-hover:opacity-10 transition-opacity">
+                <Layout size={120} />
+              </div>
+              <div className="flex flex-col">
+                <span className="text-indigo-400 font-bold mb-2">2026</span>
+                <h5 className="text-xl font-bold mb-1">Artifitail Intelligence Bootcamp</h5>
+                <p className="text-slate-400">CAPACITI</p>
+              </div>
+              
             </div>
           </div>
         </div>
@@ -547,7 +555,6 @@ export default function App() {
       <ExperienceTimeline />
       <Skills />
       <EducationAndCertificates />
-      <CapstoneShowcase />
       <Contact />
       <Footer />
     </div>

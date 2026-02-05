@@ -8,10 +8,11 @@ export const PERSONAL_INFO = {
   email: "Nqobilemagwaza6@gmail.com",
   phone: "073 595 1190",
   location: "South Africa",
-  bio: "Highly motivated Software Engineer with deep expertise in Python, Django, and Java. Transitioning into AI/ML roles with a focus on building intelligent, scalable systems. Proven track record at Empire Partner Foundation and AI Campus in delivering robust software solutions.",
+  bio: "Highly motivated Software Engineer with deep expertise in Python, Django, and Java. Transitioning into AI/ML roles with a focus on building intelligent, scalable systems. Proven track record in delivering robust software solutions, now specializing in AI/ML to build cutting-edge applications",
   brandingStatement: "Architecting the Future with Intelligent Systems and Scalable Software.",
-  linkedin: "https://linkedin.com/in/nqobile-magwaza",
-  github: "https://github.com/nqobilemagwaza",
+  linkedin: "https://www.linkedin.com/in/nqobile-magwaza",
+  github: "https://github.com/nqobilemagwaza6",
+  resumeUrl: "./assets/Nqobile Magwaza_Capaciti_Resume.pdf"
 };
 
 export const PROJECTS: Project[] = [
@@ -37,17 +38,6 @@ export const PROJECTS: Project[] = [
     demoUrl: "https://v0-taxi-compass.vercel.app/",
     keyFeatures: ["Document Management", "Automated Testing Suite", "Role-based Access"]
   },
-  {
-    id: "financial-ledger-api",
-    title: "Robust Financial Ledger API",
-    description: "A high-concurrency RESTful API for managing transaction ledgers with strict data integrity.",
-    longDescription: "Built with a focus on data consistency and ACID properties. Utilized PostgreSQL for complex relational queries and ensured high performance through optimized database indexing.",
-    techStack: ["C#.Net", "PostgreSQL", "Entity Framework", "Swagger"],
-    imageUrl: "https://picsum.photos/seed/ledger/800/600",
-    githubUrl: "https://github.com/nqobilemagwaza/ledger-api",
-    demoUrl: "#",
-    keyFeatures: ["Transaction Integrity", "Detailed Audit Logs", "Standardized Documentation"]
-  }
 ];
 
 export const EXPERIENCES: Experience[] = [
@@ -80,10 +70,10 @@ export const EXPERIENCES: Experience[] = [
     skills: ['Python', 'Django', 'MySQL', 'Agile']
   },
   {
-    company: "'Capaciti",
+    company: "Capaciti",
     role: "AI Bootcamp",
     period: "Nov 2025 – Feb 2026",
-    type: "Internship",
+    type: "Digital Associate",
     responsibilities: [
     'Engaged in hands-on AI projects, applying machine learning and deep learning techniques to real-world problems.',
     'Developed and delivered technical presentations, articulating complex AI concepts and project outcomes to peers and mentors.',
@@ -129,7 +119,14 @@ export const SKILLS: Skill[] = [
 export const CERTIFICATES: Certificate[] = [
   { title: "NQF LEVEL 5 in Systems Development", issuer: "WeThinkCode", year: "2022" },
   { title: "Certificate in Network Support", issuer: "MegaTraining", year: "2016" },
-  { title: "MCSA: Windows Server 2012 (Configuring)", issuer: "Microsoft", year: "2016" },
-  { title: "CompTIA N+", issuer: "CompTIA", year: "2016" },
-  { title: "CompTIA A+", issuer: "CompTIA", year: "2016" },
+  { title: "Introduction to Artificial Intelligence (AI)", issuer: "Cousera", year: "2026" },
+  { title: "Python for Data Science, AI & Development", issuer: "Cousera", year: "2026" },
+  { title: "Building AI Powered Chatbots Without Programming", issuer: "Cousera", year: "2026" },
+  { title: "AI on Microsoft Azure", issuer: "Cousera", year: "2026" },
+  { title: "AI Foundations: Prompt Engineering with ChatGPT", issuer: "Cousera", year: "2026" },
+  { title: "Generative AI with Large Language Models", issuer: "Cousera", year: "2026" },
+  { title: "Trustworthy AI: Managing Bias, Ethics, and Accountability", issuer: "Cousera", year: "2026" },
+  { title: "AI Essentials", issuer: "Cousera", year: "2026" },
+  { title: "Introduction to Generative AI", issuer: "Cousera", year: "2026" },
+  { title: "AI For Everyone", issuer: "Cousera", year: "2026" },
 ];
