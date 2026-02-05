@@ -504,25 +504,60 @@ const Contact: React.FC = () => (
           </div>
         </div>
         <div className="glass-card p-10 rounded-[40px]">
-          <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
-            <div className="grid md:grid-cols-2 gap-6">
-              <div className="space-y-2">
-                <label className="text-sm font-bold text-slate-400 ml-1">Name</label>
-                <input type="text" placeholder="Your Name" className="w-full bg-slate-800/50 border border-white/5 rounded-2xl p-4 focus:ring-2 focus:ring-indigo-500 outline-none transition-all" />
-              </div>
-              <div className="space-y-2">
-                <label className="text-sm font-bold text-slate-400 ml-1">Email</label>
-                <input type="email" placeholder="email@example.com" className="w-full bg-slate-800/50 border border-white/5 rounded-2xl p-4 focus:ring-2 focus:ring-indigo-500 outline-none transition-all" />
-              </div>
-            </div>
+        <form
+          name="contact"
+          method="POST"
+          data-netlify="true"
+          netlify-honeypot="bot-field"
+          className="space-y-6"
+        >
+          {/* Required hidden inputs */}
+          <input type="hidden" name="form-name" value="contact" />
+          <input type="hidden" name="bot-field" />
+
+          <div className="grid md:grid-cols-2 gap-6">
             <div className="space-y-2">
-              <label className="text-sm font-bold text-slate-400 ml-1">Message</label>
-              <textarea rows={6} placeholder="Tell me about your project..." className="w-full bg-slate-800/50 border border-white/5 rounded-2xl p-4 focus:ring-2 focus:ring-indigo-500 outline-none transition-all resize-none"></textarea>
+              <label className="text-sm font-bold text-slate-400 ml-1">Name</label>
+              <input
+                type="text"
+                name="name"
+                required
+                placeholder="Your Name"
+                className="w-full bg-slate-800/50 border border-white/5 rounded-2xl p-4"
+              />
             </div>
-            <button className="w-full py-5 bg-indigo-600 hover:bg-indigo-700 text-white rounded-2xl font-bold text-lg transition-all shadow-xl shadow-indigo-600/20 active:scale-95">
-              Send Message
-            </button>
-          </form>
+
+            <div className="space-y-2">
+              <label className="text-sm font-bold text-slate-400 ml-1">Email</label>
+              <input
+                type="email"
+                name="email"
+                required
+                placeholder="email@example.com"
+                className="w-full bg-slate-800/50 border border-white/5 rounded-2xl p-4"
+              />
+            </div>
+          </div>
+
+          <div className="space-y-2">
+            <label className="text-sm font-bold text-slate-400 ml-1">Message</label>
+            <textarea
+              name="message"
+              rows={6}
+              required
+              placeholder="Tell me about your project..."
+              className="w-full bg-slate-800/50 border border-white/5 rounded-2xl p-4 resize-none"
+            />
+          </div>
+
+          <button
+            type="submit"
+            className="w-full py-5 bg-indigo-600 hover:bg-indigo-700 text-white rounded-2xl font-bold text-lg"
+          >
+            Send Message
+          </button>
+        </form>
+
         </div>
       </div>
     </div>
