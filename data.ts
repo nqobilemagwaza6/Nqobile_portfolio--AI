@@ -4,15 +4,15 @@ import { Project, Experience, Skill, Certificate } from './types';
 export const PERSONAL_INFO = {
   name: "Nqobile Gratitude Thobile Magwaza",
   shortName: "Nqobile Magwaza",
-  title: "AI/ML Software Engineer",
+  title: "Frontend Developer",
   email: "Nqobilemagwaza6@gmail.com",
   phone: "073 595 1190",
   location: "South Africa",
-  bio: "Highly motivated Software Engineer with deep expertise in Python, Django, and Java. Transitioning into AI/ML roles with a focus on building intelligent, scalable systems. Proven track record in delivering robust software solutions, now specializing in AI/ML to build cutting-edge applications",
-  brandingStatement: "Architecting the Future with Intelligent Systems and Scalable Software.",
+  bio: "Frontend-focused developer experienced in building responsive, accessible, and user-friendly interfaces with HTML5, CSS3, JavaScript, TypeScript, React.js, Vue.js, Bootstrap, and Tailwind CSS. Strong at translating requirements into polished UI features, integrating REST APIs, improving usability, and presenting software demos for real client projects.",
+  brandingStatement: "Building responsive, usable, and performance-minded frontend experiences.",
   linkedin: "https://www.linkedin.com/in/nqobile-magwaza",
   github: "https://github.com/nqobilemagwaza6",
-  resumeUrl: "./assets/Nqobile Magwaza_Capaciti_Resume.pdf"
+  resumeUrl: "./assets/CV_Magwaza.Nqobile_Gratitude_Thobile.pdf"
 };
 
 export const PROJECTS: Project[] = [
@@ -38,82 +38,112 @@ export const PROJECTS: Project[] = [
     demoUrl: "https://v0-taxi-compass.vercel.app/",
     keyFeatures: ["Document Management", "Automated Testing Suite", "Role-based Access"]
   },
+  {
+    id: "aic-one",
+    title: "AIC One",
+    description: "Live client website focused on a clean, responsive frontend experience and accessible content presentation.",
+    longDescription: "Worked on frontend implementation and interface refinements for a live public-facing website, supporting responsive layouts, usability, and polished content sections.",
+    techStack: ["HTML5", "CSS3", "JavaScript", "Bootstrap","Vue.js"],
+    imageUrl: "./assets/aic-one.jpg",
+    demoUrl: "https://aic-one.com/",
+    keyFeatures: ["Responsive UI", "Live Website", "Client Project"]
+  },
+  {
+    id: "ict-chamber",
+    title: "ICT Chamber",
+    description: "Live organizational website with frontend updates supporting usability, structured content, and responsive page layouts.",
+    longDescription: "Contributed to frontend work on a client-facing ICT website, focusing on layout quality, navigation usability, responsive behavior, and presentation of organizational content.",
+    techStack: ["HTML5", "CSS3", "JavaScript", "Bootstrap"],
+    imageUrl: "./assets/ict-chamber.jpg",
+    demoUrl: "https://www.ictchamber.org.za/",
+    keyFeatures: ["Responsive Layouts", "Content UI", "Live Website"]
+  },
+  {
+    id: "bosa",
+    title: "BOSA",
+    description: "Live public-facing website project with frontend contributions across interface polish, responsiveness, and user experience.",
+    longDescription: "Worked on frontend improvements for a live website, helping refine user-facing pages, responsive styling, and visual consistency across key sections.",
+    techStack: ["HTML5", "CSS3", "JavaScript", "Bootstrap", "Vue.js"],
+    imageUrl: "./assets/bossa.png",
+    demoUrl: "https://bosa.co.za/",
+    keyFeatures: ["Frontend Polish", "Responsive Design", "Live Project"]
+  },
 ];
 
 export const EXPERIENCES: Experience[] = [
   {
     company: "AI Campus",
-    role: "Junior Software Engineer",
-    period: "August 2024 – Sept 2025",
+    role: "Junior Frontend Developer",
+    period: "August 2023 - September 2025",
     type: "Permanent",
     responsibilities: [
-    'Spearheaded full-stack development, including responsive front-ends with Vue.js/HTML/CSS/JS (AJAX) and robust back-ends with Django/Python (REST APIs).',
-    'Actively involved in requirements gathering, code reviews, and documentation to deliver scalable, secure solutions with integrated payment systems, managing **PostgreSQL databases**.',
-    'Operating within Agile methodologies.'
+      'Built and maintained responsive user interfaces using HTML, CSS, JavaScript, Bootstrap, jQuery, AJAX, and Flutter.',
+      'Collaborated with backend developers to connect frontend screens to APIs and deliver reliable data-driven user experiences.',
+      'Improved UI performance, usability, layout consistency, and cross-device responsiveness across multiple projects.',
+      'Participated in requirement gathering and translated business needs into clear frontend features and user flows.',
+      'Conducted software demos showcasing completed frontend functionality, user journeys, and interface improvements.'
     ],
-    skills: ['Python', 'Django', 'Vue.js', 'PostgreSQL', 'REST APIs',
-    'Agile', 'Full-Stack Development', 'Payment Integration',
-    'Requirements Analysis', 'Code Review', 'Technical Documentation']
+    skills: ['HTML', 'CSS', 'JavaScript', 'Bootstrap', 'jQuery', 'AJAX', 'Flutter', 'API Integration', 'Requirements Gathering', 'Software Demos']
   },
   {
     company: "Empire Partner Foundation",
     role: "Software Engineer Intern",
-    period: "June 2023 – May 2024",
+    period: "June 2022 - May 2023",
     type: "Internship",
     responsibilities: [
-      'Engineered and deployed full-stack features for community portals, ensuring seamless integration of front-end and back-end components.',
-      'Designed and implemented responsive user interfaces using HTML, CSS, and Bootstrap, with interactive elements developed using JavaScript and jQuery.',
-      'Developed server-side applications and RESTful APIs with Python and Django, including database design and optimization in MySQL via Django ORM.',
-      'Optimized legacy SQL queries, enhancing page load times by 20% and improving overall application performance.',
-      'Ensured cross-browser compatibility and responsiveness across web applications, and contributed to maintaining code quality through Git version control.'
+      'Designed, developed, tested, and maintained frontend features for internal and client-facing software projects.',
+      'Created responsive interfaces with HTML, CSS, Bootstrap, JavaScript, jQuery, AJAX, and Flutter while supporting documentation and requirement gathering.',
+      'Integrated frontend views with RESTful APIs and backend services built with Python Django and Java.',
+      'Worked with MySQL and PostgreSQL data flows to display accurate application information in clean, usable interfaces.',
+      'Prepared and delivered software demos, explaining frontend functionality, user workflows, and project progress to stakeholders.'
     ],
-    skills: ['Python', 'Django', 'MySQL', 'Agile']
+    skills: ['HTML', 'CSS', 'Bootstrap', 'JavaScript', 'jQuery', 'AJAX', 'RESTful APIs', 'Python Django', 'Java', 'MySQL', 'PostgreSQL']
   },
   {
-    company: "Capaciti",
-    role: "AI Bootcamp",
-    period: "Nov 2025 – Feb 2026",
-    type: "Digital Associate",
+    company: "CAPACITI",
+    role: "UI/UX Developer",
+    period: "October 2025 - Present",
+    type: "Internship",
     responsibilities: [
-    'Engaged in hands-on AI projects, applying machine learning and deep learning techniques to real-world problems.',
-    'Developed and delivered technical presentations, articulating complex AI concepts and project outcomes to peers and mentors.',
-    'Completed a series of specialized Coursera courses, enhancing theoretical understanding and practical skills in various AI domains.'
+      'Develop modern UI components using React.js, Vue.js, TypeScript, JavaScript ES6+, Bootstrap, and Tailwind CSS.',
+      'Work on real client projects with a strong focus on user experience, interface design, responsive layouts, and frontend quality.',
+      'Assist in testing, refining, and improving frontend features before deployment.',
+      'Collaborate with teams to optimize application usability, accessibility, performance, and visual consistency.',
+      'Gain practical exposure to deployment pipelines, component-based development, and frontend best practices.'
     ],
-    skills: ['AI', 'Machine Learning', 'Deep Learning', 'Presentation Skills', 'Data Analysis']
+    skills: ['React.js', 'Vue.js', 'TypeScript', 'JavaScript ES6+', 'HTML5', 'CSS3', 'Tailwind CSS', 'Bootstrap', 'UI/UX', 'Frontend Testing']
   }
 ];
 
 export const SKILLS: Skill[] = [
- // --- Languages ---
-  { name: 'Python', level: 5, category: 'Languages' },
-  { name: 'JavaScript', level: 4, category: 'Languages' },
-  { name: 'HTML5', level: 5, category: 'Languages' },
-  { name: 'CSS3', level: 5, category: 'Languages' },
-  { name: 'Java', level: 4, category: 'Languages' },
-  // --- Frameworks & Libraries ---
-  { name: 'Django', level: 5, category: 'Frameworks & Libraries' },
-  { name: 'Django REST Framework', level: 4, category: 'Frameworks & Libraries' },
-  { name: 'Vue.js', level: 4, category: 'Frameworks & Libraries' },
-  { name: 'Spring Boot', level: 4, category: 'Frameworks & Libraries' },
-  { name: 'Bootstrap', level: 4, category: 'Frameworks & Libraries' },
-  // --- Databases ---
-  { name: 'PostgreSQL', level: 4, category: 'Databases' },
-  { name: 'MySQL', level: 3, category: 'Databases' },
-  // --- Cloud & DevOps ---
-  { name: 'Docker', level: 1, category: 'Cloud & DevOps' },
-  // --- API & Integration ---
-  { name: 'REST API Design & Development', level: 4, category: 'API & Integration' },
-  { name: 'AJAX', level: 4, category: 'API & Integration' },
-  { name: 'Payment Integration', level: 4, category: 'API & Integration' },
-  { name: 'OAuth2', level: 3, category: 'API & Integration' },
-  // --- Development Practices ---
-  { name: 'Agile Methodologies', level: 4, category: 'Development Practices' },
-  { name: 'Requirements Analysis', level: 4, category: 'Development Practices' },
-  { name: 'Code Review', level: 4, category: 'Development Practices' },
-  { name: 'Technical Documentation', level: 3, category: 'Development Practices' },
-  { name: 'System Design', level: 4, category: 'Development Practices' },
-  // --- Soft Skills ---
-  { name: 'Stakeholder Management', level: 4, category: 'Soft Skills' },
+  // --- Frontend ---
+  { name: 'HTML5', level: 5, category: 'Frontend' },
+  { name: 'CSS3', level: 5, category: 'Frontend' },
+  { name: 'JavaScript ES6+', level: 5, category: 'Frontend' },
+  { name: 'TypeScript', level: 4, category: 'Frontend' },
+  { name: 'React.js', level: 4, category: 'Frontend' },
+  { name: 'Vue.js', level: 4, category: 'Frontend' },
+  { name: 'Bootstrap', level: 5, category: 'Frontend' },
+  { name: 'Tailwind CSS', level: 4, category: 'Frontend' },
+  { name: 'jQuery', level: 4, category: 'Frontend' },
+  { name: 'Flutter', level: 3, category: 'Frontend' },
+
+  // --- API & Backend Exposure ---
+  { name: 'RESTful API Integration', level: 4, category: 'Backend' },
+  { name: 'AJAX', level: 4, category: 'Backend' },
+  { name: 'Python Django', level: 4, category: 'Backend' },
+  { name: 'Java', level: 3, category: 'Backend' },
+
+  // --- Data ---
+  { name: 'MySQL', level: 3, category: 'Database' },
+  { name: 'PostgreSQL', level: 3, category: 'Database' },
+
+  // --- Workflow & Delivery ---
+  { name: 'Requirement Gathering', level: 4, category: 'Tools' },
+  { name: 'UI Testing', level: 4, category: 'Tools' },
+  { name: 'Software Demos', level: 4, category: 'Tools' },
+  { name: 'Agile Collaboration', level: 4, category: 'Tools' },
+  { name: 'Frontend Deployment Practices', level: 3, category: 'DevOps' },
 ];
 
 export const CERTIFICATES: Certificate[] = [

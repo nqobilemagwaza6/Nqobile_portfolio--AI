@@ -102,10 +102,10 @@ const Hero: React.FC = () => {
         <div className="space-y-8">
           <div className="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 text-sm font-medium">
             <Cpu size={14} />
-            <span>AI/ML Software Engineer</span>
+            <span>{PERSONAL_INFO.title}</span>
           </div>
           <h1 className="text-5xl md:text-7xl font-bold font-heading leading-tight">
-            I build <span className="gradient-text">intelligent</span> systems that scale.
+            I build <span className="gradient-text">polished</span> frontend experiences.
           </h1>
           <p className="text-xl text-slate-400 max-w-lg leading-relaxed">
             {PERSONAL_INFO.bio}
@@ -151,18 +151,18 @@ const SectionHeading: React.FC<{ title: string; subtitle: string }> = ({ title, 
 const About: React.FC = () => (
   <section id="about" className="py-24 bg-slate-900/50">
     <div className="container mx-auto px-6">
-      <SectionHeading title="Passionate about AI-driven solutions." subtitle="Biography" />
+      <SectionHeading title="Passionate about usable digital products." subtitle="Biography" />
       <div className="grid md:grid-cols-3 gap-12">
         <div className="md:col-span-2 space-y-6">
         <p className="text-xl text-slate-300 leading-relaxed">
-            As a 1997-born professional matriculated in 2014, I have spent the last decade building a strong foundation in systems development. My journey began with a Certificate in Network Support and evolved into a deep dive into full-stack development through WeThinkCode.
+            I am a frontend-focused developer with a strong systems development foundation, shaped through hands-on work across UI development, software engineering, and client-facing projects.
           </p>
           <p className="text-xl text-slate-300 leading-relaxed">
-            I am dedicated to bridging the gap between traditional software engineering and the rapidly evolving field of Artificial Intelligence. My unique background in networking and systems development allows me to architect solutions that are not only intelligent but also infrastructure-aware, focusing on building intelligent, scalable AI/ML systems.
+            My strengths sit at the point where clean interface design meets practical implementation: responsive layouts, reusable components, API integration, usability improvements, requirement gathering, testing, and confident software demos.
           </p>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 pt-8">
             <div className="p-6 rounded-2xl glass-card text-center group hover:border-indigo-500/50 transition-all">
-              <h4 className="text-3xl font-bold text-indigo-400 mb-1">2+</h4>
+              <h4 className="text-3xl font-bold text-indigo-400 mb-1">3+</h4>
               <p className="text-xs uppercase text-slate-500 tracking-wider">Years Exp.</p>
             </div>
             <div className="p-6 rounded-2xl glass-card text-center group hover:border-indigo-500/50 transition-all">
@@ -224,12 +224,18 @@ const ProjectCard: React.FC<{ project: Project }> = ({ project }) => (
       <h4 className="text-2xl font-bold mb-3 group-hover:text-indigo-400 transition-colors">{project.title}</h4>
       <p className="text-slate-400 mb-6 line-clamp-2">{project.description}</p>
       <div className="mt-auto flex items-center justify-between pt-6 border-t border-white/5">
-        <a href={project.githubUrl} className="flex items-center gap-2 text-sm font-semibold hover:text-indigo-400 transition-colors">
-          <Github size={18} /> Code
-        </a>
-        <a href={project.demoUrl} className="flex items-center gap-2 text-sm font-semibold hover:text-indigo-400 transition-colors">
-          Demo <ExternalLink size={18} />
-        </a>
+        {project.githubUrl ? (
+          <a href={project.githubUrl} className="flex items-center gap-2 text-sm font-semibold hover:text-indigo-400 transition-colors">
+            <Github size={18} /> Code
+          </a>
+        ) : (
+          <span className="text-xs font-bold uppercase tracking-widest text-slate-500">Live Project</span>
+        )}
+        {project.demoUrl && (
+          <a href={project.demoUrl} className="flex items-center gap-2 text-sm font-semibold hover:text-indigo-400 transition-colors">
+            Visit <ExternalLink size={18} />
+          </a>
+        )}
       </div>
     </div>
   </div>
@@ -470,7 +476,7 @@ const Contact: React.FC = () => (
       <div className="grid lg:grid-cols-2 gap-16">
         <div className="space-y-12">
           <p className="text-2xl text-slate-400 leading-relaxed max-w-lg">
-            I'm currently looking for new opportunities in <span className="text-white font-bold">AI/ML Software Engineering</span>. If you have a project or a position, let's talk.
+            I'm currently looking for new opportunities in <span className="text-white font-bold">Frontend Development and UI/UX Development</span>. If you have a project or a position, let's talk.
           </p>
           <div className="space-y-6">
             <a href={`mailto:${PERSONAL_INFO.email}`} className="flex items-center gap-6 group">

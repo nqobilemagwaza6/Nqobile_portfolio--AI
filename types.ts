@@ -6,8 +6,8 @@ export interface Project {
   longDescription: string;
   techStack: string[];
   imageUrl: string;
-  githubUrl: string;
-  demoUrl: string;
+  githubUrl?: string;
+  demoUrl?: string;
   keyFeatures: string[];
 }
 
